@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sign In and Sign Up Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="stylesheet" href="/src/signup.css">
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="favicon.ico" type="image/jpg">
+</head>
+
+<body>
+    <div id="root"></div>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form method="post" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input name="user_nam" type="text" placeholder="User Name" id="email" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input name="user_pass" type="password" placeholder="Password" id="password" required />
+                    </div>
+                    <input type="submit" class="btn solid" value="Login" id="login" />
+                    <p class="social-text">Or Sign in with social platform</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon" id="google-login">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
+                </form>
+                <form method="post" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input name="user_name" id="username" type="text" placeholder="Full Name" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-phone"></i>
+                        <input name="user_phone" id="userphone" type="tel" placeholder="Phone Number" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input name="user_email" id="useremail" type="email" placeholder="Email" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input name="user_password" id="userpassword" type="password" placeholder="Password" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-camera"></i>
+                        <input name="user_profile_photo" id="userprofilephoto" type="file" accept="image/*" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-image"></i>
+                        <input name="user_cover_photo" id="usercoverphoto" type="file" accept="image/*" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-calendar-alt"></i>
+                        <input name="user_dob" id="userdob" type="date" placeholder="Date of Birth" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-venus-mars"></i>
+                        <select name="user_gender" id="usergender" required>
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input name="user_address" id="useraddress" type="text" placeholder="Address" required />
+                    </div>
+                    <input type="submit" id="signup" name="sign_up" class="btn" value="Sign Up" />
+
+                    <p class="social-text">Or Sign Up with social platform</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon" id="google-login1">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New Here?</h3>
+                    <p>
+                        It is our great pleasure to have you on board!<br> A hearty welcome to you!
+                    </p>
+                    <button class="btn transparent" id="sign-up-btn">Sign Up</button>
+                </div>
+                <img src="./img/undraw_feeling_proud_qne1.svg" alt="" class="image" />
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Already have an account?</h3>
+                    <p>
+                        It is our great pleasure to have you on board! A hearty welcome to you!
+                    </p>
+                    <button class="btn transparent" id="sign-in-btn">Sign In</button>
+                </div>
+                <img src="./img/signn.svg" alt="" class="image" />
+            </div>
+        </div>
+    </div>
+    <script src="/src/script.js"></script>
+</body>
+<script type="module" src="/src/user.js">
+
+</script>
+
+</html>

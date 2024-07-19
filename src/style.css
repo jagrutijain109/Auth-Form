@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#profile-image {
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#profile-name {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#profile-details {
+    text-align: left;
+    justify-content: right;
+    width: 100%;
+    padding: 40px 0px 0px 50px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#profile-details p {
+    margin-bottom: 5px;
+}
+
+.detail-qr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 50px;
+
+}
+
+.qrcode {
+    width: 150px;
+    height: 150px;
+
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #profile-details {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-qr {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .qrcode {
+        margin-top: 20px;
+    }
+}

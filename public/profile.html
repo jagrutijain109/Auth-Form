@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+    <div class="container" id="profile">
+        <div class="image-container">
+            <div class="interactive-image">
+                <div id="profile-image" class="interactive-image" style="background-image: url('');"></div>
+            </div>
+            <h2 id="profile-name"></h2>
+            <div class="detail-qr">
+                <div id="profile-details">
+                    <p id="profile-dob"></p>
+                    <p id="phone"></p>
+                    <p id="gender"></p>
+                    <p id="email"></p>
+                    <p id="address"></p>
+                </div>
+                <div id="qr-code" class="qrcode" class="image-container"></div>
+            </div>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+    </div>
+    
+    <script type="module" src="/src/userprofile.js">
+    </script>
+    <script src="/src/profile.js"></script>
+</body>
+
+</html>
