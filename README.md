@@ -56,7 +56,7 @@ git clone https://github.com/jagrutijain109/Auth-Form.git
 
 ### Steps
 
-Open index.html in your browser.
-Sign up or log in using Google or your email.
-View the profile page after logging in.
-Scan the QR code to see the User profile information.
+- Open index.html in your browser.
+- Sign up or log in using Google or your email.
+- View the profile page after logging in.
+- Scan the QR code to see the User profile information.
